@@ -1,0 +1,12 @@
+{
+    "IsEncrypted": false,
+    "Values": {
+      "FUNCTIONS_WORKER_RUNTIME": "python",
+      "FUNCTIONS_WORKER_PROCESS_COUNT": 1,
+      "PYTHON_THREADPOOL_THREAD_COUNT": 4,
+      "name_of_eventhub_consumer_grup_EVENTHUB": "@Microsoft.KeyVault(SecretUri=https://xxx-na-vault.vault.azure.net/secrets/mysecret/)",
+      "AzureWebJobsStorage": "UseDevelopmentStorage=true",
+      "AzureWebJobsFeatureFlags": "EnableWorkerIndexing"
+    }
+  }
+  

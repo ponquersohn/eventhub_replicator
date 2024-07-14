@@ -1,0 +1,13 @@
+# the file contains the list of replications to be maintained by the function
+schema: 1.0
+replications:
+  - name: "name_of_the_replication"
+    source: 
+      event_hub_name: "source-eventhub"
+      connection: "TheNameOfTheConnection"  # will be used to do os.getenv("TheNameOfTheConnection")
+      consumer_group: ""  # optional, default is "$Default".
+    destinations: 
+      - event_hub_name: "destination-eventhub1"
+        connection: "TheNameOfTheConnection"  # will be used to do os.getenv("TheNameOfTheConnection")
+      - event_hub_name: "destination-eventhub2"
+        connection: "TheNameOfTheConnection"  # will be used to do os.getenv("TheNameOfTheConnection")
