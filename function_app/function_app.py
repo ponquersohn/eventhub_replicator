@@ -22,7 +22,7 @@ def eventhub_replicator(inputeventhub: func.EventHubEvent, *outputs: func.Out[st
         inputeventhub = [inputeventhub]
     for event in inputeventhub:
         event = event.get_body()
-        logging.info("Python EventHub trigger processed an event: %s", event.decode("utf-8")[:140])
+        logging.debug("Python EventHub trigger processed an event: %s", event.decode("utf-8")[:140])
 
         for output in outputs:
             output.set(event)
